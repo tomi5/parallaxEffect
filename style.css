@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Oleo Script Swash Caps', cursive;
+}
+
+body {
+    background-color: #6b7175;
+
+}
+
+.parallax-container {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.parallax-container::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #2e2e2e63, transparent);
+    z-index: 10000;
+}
+
+
+.parallax-container::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #3a3a3abd;
+    z-index: 10000;
+    mix-blend-mode: color;
+}
+
+.layer {
+    position: absolute;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+.layer--sky {
+    top: 0;
+    left: 0;
+    width: 120%;
+    height: 100%;
+    filter: saturate(80%);
+}
+
+
+.layer--mountain {
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: auto;
+    transform: translateY(-10%);
+    filter: saturate(30%);
+}
+
+.layer--road {
+    bottom: 0;
+    left: 0;
+    width: 105%;
+    height: 100%;
+    z-index: 2;
+    transform: translateY(30%);
+}
+
+.layer--motorbike {
+    bottom: 0%;
+    left: 50%;
+    z-index: 200;
+    transform: translateX(50%) scale(1);
+
+}
+
+.main-header {
+    position: fixed;
+    color: #fff;
+    z-index: 1;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 6em;
+    top: 0;
+    transform: translateY(5vh);
+}
+
+
+.content {
+    position: relative;
+    padding: 100px 5em;
+    background-color: #6b7175;
+    z-index: 10;
+    height: 100%;
+}
+
+.content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background: linear-gradient(to bottom, #2e2e2e63, transparent);
+
+}
+
+.header {
+    color: #fff;
+    font-size: 2.5em;
+}
+
+.descr {
+    margin-top: 30px;
+    color: #fff;
+    font-size: 1em;
+    line-height: 1.5em;
+}
