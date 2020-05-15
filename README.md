@@ -1,4 +1,12 @@
-# parallaxEffect
-my small training project with parallax effect
+﻿
+# DParallax Effect
 
-full parallax effect is available from 1000px
+##  my small training project with parallax effect
+
+##### full parallax effect is available from 1000px
+###### Tech Work used:
+
+- JavaScript
+- HTML5
+- pure CSS3
+
